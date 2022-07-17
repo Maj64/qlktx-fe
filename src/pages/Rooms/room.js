@@ -100,7 +100,7 @@ const Room = () => {
     );
 
     return (
-        <div className={cx('container')}>
+        <div className={cx('containerRoom')}>
             <div id={cx('content-wrapper')}>
                 <div className={cx('container-fluid')}>
                     <ol className={cx('breadcrumb')}>
