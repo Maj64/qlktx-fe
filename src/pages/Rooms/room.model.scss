@@ -1,0 +1,121 @@
+.container {
+    section {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    h1.title {
+        font-size: 3.125rem;
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    label {
+        display: grid;
+        grid-gap: 4rem;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+    }
+
+    span {
+        width: 7rem;
+    }
+
+    .form input {
+        background: white;
+        color: rgb(35, 199, 218);
+        transition: all 200ms ease;
+        border-left: 0 solid transparent;
+        border: 0rem;
+        width: 12rem;
+        height: 3rem;
+        padding: 0 calc(5.8rem * 0.5);
+        border-radius: calc(5.8rem * 0.3);
+        box-shadow: 0 0 1rem rgb(0, 0, 0, 20%);
+    }
+
+    .form input:not(:placeholder-shown):valid {
+        border-left: 2rem solid rgb(31 132 87);
+    }
+
+    .form input:not(:placeholder-shown):invalid {
+        border-left: 2rem solid rgb(209 50 81);
+    }
+
+    .form input:placeholder-shown {
+        border-left: 0rem solid;
+    }
+
+    .submit {
+        position: relative;
+        border: 10rem;
+        width: 12rem;
+        height: 3rem;
+        top: 1rem;
+        left: 15rem;
+        padding: 0 calc(5.8rem * 0.5);
+        border-radius: calc(5.8rem * 0.3);
+        box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
+    }
+
+    i.fa-pen:hover {
+        cursor: pointer;
+    }
+
+    i.fa-trash:hover {
+        cursor: pointer;
+    }
+
+    i.fa-user-plus:hover {
+        cursor: pointer;
+    }
+
+    i.fa-edit:hover {
+        cursor: pointer;
+    }
+
+    i.fa-minus-circle:hover {
+        cursor: pointer;
+    }
+
+    i.fa-times:hover {
+        cursor: pointer;
+    }
+
+    .container-fluid-half-l {
+        width: 42%;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 0.7rem;
+        float: left;
+    }
+
+    .container-fluid-half-r {
+        width: 55%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        float: right;
+        margin-right: 1rem;
+        border-radius: 0.7rem;
+        border: 0.2rem solid rgb(0, 0, 0, 20%);
+    }
+
+    .btn-add {
+        margin-left: auto !important;
+    }
+
+    .room {
+        font-style: normal;
+    }
+
+    .room:hover {
+        cursor: pointer;
+        font-weight: bolder;
+    }
+}
